@@ -1,4 +1,4 @@
-# Séance 6 : La Régression Logistique
+	# Séance 6 : La Régression Logistique
 
 **Dossier :** `[[regression-logistique]]` 
 **Parent :** `[[seance-6-entrainement-du-model]]` 

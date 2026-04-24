@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f171e813337cf26d",
+        "id": "6444b77bbab05041",
         "type": "tabs",
         "children": [
           {
-            "id": "477b9fc996de6a1b",
+            "id": "389d3595e4c68d47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seance-3-algebre-lineaire-au-ml/notes_alg_lin.md",
+                "file": "seance-7-arbre-de-decision/2-algo-id3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "notes_alg_lin"
+              "title": "2-algo-id3"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ceaf333fd0cf05da",
@@ -183,17 +183,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "477b9fc996de6a1b",
+  "active": "389d3595e4c68d47",
   "lastOpenFiles": [
+    "seance-7-arbre-de-decision/3-algo-c4.5.md",
+    "seance-7-arbre-de-decision/2-algo-id3.md",
+    "seance-7-arbre-de-decision/1-definition.md",
+    "seance-3-algebre-lineaire-au-ml/notes_alg_lin.md",
+    "seance-7-arbre-de-decision",
+    "seance-2-python-pour-ml/notes_python_pour_ml.md",
+    "seance-5-entrainement-du-model/regression-logistique/notes_regression_logistique.md",
+    "seance-5-entrainement-du-model/regression-lineaire/notes_regression_lineaire.md",
+    "seance-6-fonction-de-cout--evaluation-performance-model/2-evaluation-de-modele/notes_evaluation_modele.md",
+    "seance-6-fonction-de-cout--evaluation-performance-model/1-fonction-de-cout/notes_fonction_de-cout.md",
+    "seance-6-fonction-de-cout--evaluation-performance-model/2-evaluation-de-modele",
+    "seance-6-fonction-de-cout--evaluation-performance-model/1-fonction-de-cout",
+    "seance-6-fonction-de-cout--evaluation-performance-model",
     "seance-4-collections-des-donnees-nettyage/notes_collections_des_donnees.md",
     "seance-4-collections-des-donnees-nettyage/pipeline.png",
-    "seance-2-python-pour-ml/notes_python_pour_ml.md",
-    "seance-5-entrainement-du-model/regression-lineaire/notes_regression_lineaire.md",
+    "seance-3-algebre-lineaire-au-ml/vecteur_matrice_produit.png.png",
     "pipeline.png.md",
-    "seance-5-entrainement-du-model/regression-logistique/notes_regression_logistique.md",
-    "seance-3-algebre-lineaire-au-ml/notes_alg_lin.md",
     "seance-3-algebre-lineaire-au-ml.md",
-    "new Machine learning 2026.pdf",
-    "seance-3-algebre-lineaire-au-ml/vecteur_matrice_produit.png.png"
+    "new Machine learning 2026.pdf"
   ]
 }
