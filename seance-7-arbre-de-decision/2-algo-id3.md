@@ -285,6 +285,98 @@ $$H(S_\text{Pluie}) = -\frac{3}{5}\log_2\frac{3}{5} - \frac{2}{5}\log_2\frac{2}{
 
 ---
 
+
+## 💻 Code pyhton
+
+```
+import pandas as pd
+
+from sklearn.preprocessing import LabelEncoder
+
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+
+import matplotlib.pyplot as plt
+
+# Données du tableau
+data = {
+
+    'Jour': ['J1', 'J2', 'J3', 'J4', 'J5', 'J6', 'J7', 'J8', 'J9',
+
+             'J10', 'J11', 'J12', 'J13', 'J14'],
+
+  
+
+    'Ciel': ['Soleil', 'Soleil', 'Couvert', 'Pluie', 'Pluie',
+
+             'Pluie', 'Couvert', 'Soleil', 'Soleil', 'Pluie',
+
+             'Soleil', 'Couvert', 'Couvert', 'Pluie'],
+
+  
+
+    'Température': ['Chaud', 'Chaud', 'Chaud', 'Doux', 'Froid',
+
+                    'Froid', 'Froid', 'Doux', 'Froid', 'Doux',
+
+                    'Doux', 'Doux', 'Chaud', 'Doux'],
+
+  
+
+    'Humidité': ['Elevée', 'Elevée', 'Elevée', 'Elevée', 'Normale',
+
+                 'Normale', 'Normale', 'Elevée', 'Normale', 'Normale',
+
+                 'Normale', 'Elevée', 'Normale', 'Elevée'],
+
+  
+
+    'Vent': ['Faible', 'Fort', 'Faible', 'Faible', 'Faible',
+
+             'Fort', 'Fort', 'Faible', 'Faible', 'Fort',
+
+             'Fort', 'Faible', 'Faible', 'Fort'],
+
+  
+
+    'Jouer': ['Non', 'Non', 'Oui', 'Oui', 'Oui',
+
+              'Non', 'Oui', 'Non', 'Oui', 'Oui',
+
+              'Oui', 'Oui', 'Oui', 'Non']
+}
+
+# Creation du Dataframe
+df = pd.DataFrame(data)
+
+# Ecnodage des variables categorielles
+label_encoders = {}
+
+for column in ['Ciel', 'Température', 'Humidité', 'Vent', 'Jouer']:
+
+    le = LabelEncoder()
+
+    df[column] = le.fit_transform(df[column])
+
+    label_encoders[column] = le
+
+
+# Séparation des variables explicatives et cible
+X = df[['Ciel', 'Température', 'Humidité', 'Vent']]
+y = df['Jouer']
+  
+# Creation et entrainement du modele
+dtc = DecisionTreeClassifier(criterion='entropy', random_state=0) #id3
+dtc.fit(X,y)
+
+# Affichage de l'arbre
+plt.figure(figsize=(12,8))
+plot_tree(dtc, feature_names=X.columns, class_names=label_encoders['Jouer'].classes_, filled=True)
+plt.title("Arbre de Décision pour prédire Jouer")
+
+plt.show()
+```
+
+
 ## ✅ Avantages et ⚠️ Limites
 
 | ✅ Simple à comprendre et implémenter                                                                                       |
